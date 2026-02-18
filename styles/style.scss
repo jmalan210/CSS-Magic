@@ -1,0 +1,38 @@
+@import 'variables';
+@import 'base';
+
+h1 {
+    color: $teal;
+    font-size: 5rem;
+
+    span {
+        color: $rose;
+    }
+}
+
+nav {
+    background-color: $blush;
+     
+    ul {
+        display: flex;
+        justify-content: space-around;
+
+        li {
+            font-size: 1.5rem;
+            font-weight: bold;
+            padding: 5px;
+
+            &:hover {
+                background-color: $rose;
+                color: white;
+            }
+
+            & a.active {
+                background-color: $rose;
+                color: white;
+            }
+        }
+
+    }
+
+}

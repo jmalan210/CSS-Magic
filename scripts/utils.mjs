@@ -25,8 +25,12 @@ export async function loadHeaderFooter() {
     year.textContent = new Date().getFullYear();
 
     const links = header.querySelectorAll(".nav li a");
+    const currentPath = window.location.pathname;
+
     links.forEach(link => {
-        if (window.location.href.includes(link.getAttribute("href"))) {
+        const linkPath = link.getAttribute("href");
+
+        if (currentPath.endsWith(linkPath)) {
             link.classList.add("active");
         }
     });

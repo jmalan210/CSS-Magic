@@ -1,0 +1,61 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+ul, ol {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Playfair Display", serif;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  font-family: "Source Sans 3", sans-serif;
+}
+
+h1, h2 {
+  text-align: center;
+}
+
+h1 {
+  color: #01555f;
+  font-size: 5rem;
+}
+h1 span {
+  color: #ce505c;
+}
+
+nav {
+  background-color: #e79fa6;
+}
+nav ul {
+  display: flex;
+  justify-content: space-around;
+}
+nav ul li {
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 5px;
+}
+nav ul li:hover {
+  background-color: #ce505c;
+  color: white;
+}
+nav ul li a.active {
+  background-color: #ce505c;
+  color: white;
+}/*# sourceMappingURL=style.css.map */

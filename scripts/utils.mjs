@@ -24,15 +24,16 @@ export async function loadHeaderFooter() {
     const year = document.querySelector("#current-year");
     year.textContent = new Date().getFullYear();
 
-    const links = header.querySelectorAll(".nav li a");
-    const currentPath = window.location.pathname;
+    const currentPage = window.location.pathname.split("/").pop();
+  const links = header.querySelectorAll(".nav li a");
 
-    links.forEach(link => {
-        const linkPath = link.getAttribute("href");
+  links.forEach(link => {
+    let linkPage = link.getAttribute("href")
+                       .replace(/^(\.\/|\/)/, "")
+                       .split("?")[0];
 
-        if (currentPath.endsWith(linkPath)) {
-            link.classList.add("active");
-        }
-    });
+    if (linkPage === currentPage) {
+      link.classList.add("active");
+    }
+  });
 }
-    

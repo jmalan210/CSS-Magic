@@ -41,26 +41,36 @@ h1 span {
 
 nav {
   background-color: #e79fa6;
+  overflow: visible;
+  margin-top: 40px;
 }
 nav ul {
   display: flex;
-  justify-content: space-around;
+  gap: 5px;
+  justify-content: center;
   padding: 0;
   margin: 0;
 }
 nav ul li a {
   display: block;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: bold;
-  padding: 5px;
-  color: inherit;
-  transition: background-color 0.2s, color 0.2s;
+  padding: 10px 20px;
+  color: black;
+  border-top: 2px solid #ce505c;
+  border-left: 2px solid #ce505c;
+  border-right: 2px solid #ce505c;
+  border-bottom: none;
+  border-radius: 7px 7px 0 0;
+  background-color: #e79fa6;
+  transition: all 0.2s;
+  transform: translateY(-12px);
+  box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.1);
 }
 nav ul li a:hover {
-  background-color: #ce505c;
-  color: white;
+  background-color: rgb(241.2, 199.8, 203.825);
 }
 nav ul li a.active {
-  background-color: #ce505c;
-  color: white;
+  background-color: white;
+  transform: translateY(-18px);
 }/*# sourceMappingURL=style.css.map */

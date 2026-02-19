@@ -27,6 +27,8 @@ nav {
         li{ 
              a {
             display: block;
+            width: 130px;
+            text-align: center;
             font-size: 1.2rem;
             font-weight: bold;
             padding: 10px 20px;
@@ -61,6 +63,21 @@ nav {
     }
 
 }
+}
+.welcome {
+    text-align: center;
+}
+.github-link {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+    color: $plum;
+
+    &:hover {
+        color: $rose;
+        transform: scale(1.1);
+    }
+
 }
 
 footer {

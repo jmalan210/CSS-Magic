@@ -9,6 +9,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    
    
 }
 
@@ -33,7 +34,9 @@ html, body {
 }
 
 body {
+    color: $navy;
     font-family: $body-font;
+   
 }
 
 h1, h2 {

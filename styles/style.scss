@@ -2,12 +2,27 @@
 @import 'base';
 
 h1 {
-    color: $teal;
+    
     font-size: 5rem;
+    font-weight: 800;
+    background: linear-gradient(90deg, $rose, lighten($blush, 50%);
+    background-size: 200% 200%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: gradientMove 6s ease infinite;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.15);
+   
+}
 
-    span {
-        color: $rose;
-    }
+@keyframes gradientMove {
+    0% { background-position: 0% 50%;}
+    50% { background-position: 100% 50%;}
+    100% {background-position: 0% 50%;}
+}
+
+h2 {
+    color: $navy;
 }
 
 nav {
@@ -28,19 +43,19 @@ nav {
             font-size: 1.2rem;
             font-weight: bold;
             padding: 10px 20px;
-            color: black;
+            color: $navy;
             border-top: 2px solid $rose;
             border-left: 2px solid $rose;
             border-right: 2px solid $rose;
             border-bottom: none;
             border-radius: 7px 7px 0 0;
-            background-color: $blush;
+            background-color: lighten($blush, 10%);
             transition: all 0.2s;
             transform: translateY(-12px);  
             box-shadow: 0 -2px 6px rgba(0,0,0,0.1);
 
             &:hover {
-                background-color: lighten($blush, 10%);
+                background-color: $blush;
                
                
                
@@ -48,6 +63,7 @@ nav {
              &.active {
                 background-color: white;
                 transform: translateY(-18px);
+                transition: 0.2s ease;
                
             }
 
@@ -58,4 +74,11 @@ nav {
     }
 
 }
+}
+
+footer {
+    text-align: center;
+    background-color: $rose;
+    color: white;
+    padding: 5px;
 }

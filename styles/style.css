@@ -32,11 +32,30 @@ h1, h2 {
 }
 
 h1 {
-  color: #01555f;
   font-size: 5rem;
+  font-weight: 800;
+  background: linear-gradient(90deg, #ce505c, white);
+  background-size: 200% 200%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: gradientMove 6s ease infinite;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
 }
-h1 span {
-  color: #ce505c;
+
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+h2 {
+  color: #09075a;
 }
 
 nav {
@@ -56,21 +75,29 @@ nav ul li a {
   font-size: 1.2rem;
   font-weight: bold;
   padding: 10px 20px;
-  color: black;
+  color: #09075a;
   border-top: 2px solid #ce505c;
   border-left: 2px solid #ce505c;
   border-right: 2px solid #ce505c;
   border-bottom: none;
   border-radius: 7px 7px 0 0;
-  background-color: #e79fa6;
+  background-color: rgb(241.2, 199.8, 203.825);
   transition: all 0.2s;
   transform: translateY(-12px);
   box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.1);
 }
 nav ul li a:hover {
-  background-color: rgb(241.2, 199.8, 203.825);
+  background-color: #e79fa6;
 }
 nav ul li a.active {
   background-color: white;
   transform: translateY(-18px);
+  transition: 0.2s ease;
+}
+
+footer {
+  text-align: center;
+  background-color: #ce505c;
+  color: white;
+  padding: 5px;
 }/*# sourceMappingURL=style.css.map */

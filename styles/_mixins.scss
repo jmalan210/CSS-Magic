@@ -1,0 +1,37 @@
+@mixin shimmer-text(
+  $color1: $shimmer-color-1,
+  $color2: $shimmer-color-2,
+  $color3: $shimmer-color-3,
+  $duration: $shimmer-duration,
+  $opacity: $shimmer-opacity,
+  $offset: $shimmer-offset,
+  $glow: $shimmer-text-shadow
+) {
+  position: relative;
+  background: linear-gradient(90deg, $color1, $color2, $color3);
+  background-size: 300% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-shadow: $glow;
+  animation: gradientMove $duration ease-in-out infinite;
+
+  &::after {
+    content: attr(data-text);
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      110deg,
+      transparent 0%,
+      rgba(255,255,255, $opacity) 50%,
+      transparent 60%
+    );
+    background-size: 200% 100%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: shimmer $duration linear infinite;
+    pointer-events: none;
+    transform: translateY($offset);
+  }
+}

@@ -9,3 +9,16 @@
 
     //Spacing
     $base-spacing: 10px;
+
+    //Colors for shimmer gradient
+    $shimmer-color-1: #09075a;
+    $shimmer-color-2: #e79fa6;
+    $shimmer-color-3: #ce505c;
+
+    //Shimmer settings 
+    $shimmer-duration: 8s;          //base gradient animation
+    $shimmer-opacity: 0.6;          //shimmer intensity
+    $shimmer-offset: -2px;          // vertical shift for overlay
+    $shimmer-text-shadow: 0 0 20px rgba(255,255,255,0.15); // glow effect
+
+

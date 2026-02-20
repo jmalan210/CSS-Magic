@@ -1,0 +1,45 @@
+{
+  "circle": {
+    "width": "100px",
+    "height": "100px",
+    "border-radius": "50%",
+    "background-color": "#ce505c"
+  },
+  "triangle": {
+    "width": "0",
+    "height": "0",
+    "border-left": "50px solid transparent",
+    "border-right": "50px solid transparent",
+    "border-bottom": "100px solid #003547"
+  }, 
+  "half-circle": {
+    "width": "150px",
+    "height": "75px", 
+    "border-radius": "100vw 100vw 0 0",
+    "background-color": "#7E678F"
+  }, 
+  "leaf": {
+    "width": "150px",
+    "height": "100px", 
+    "border-radius": "100vw 0 100vw 0",
+    "background-color": "#e79fa6"
+  },
+  "wedge": {
+    "width": "100px",
+    "height": "100px", 
+    "border-radius": "100vw 0 0 0",
+    "background-color": "#ce505c"
+  }, 
+  "pill": {
+    "width": "150px",
+    "height": "75px", 
+    "border-radius": "100vw",
+    "background-color": "#003547"
+  }, 
+    "tear-drop": {
+    "width": "100px",
+    "height": "100px", 
+    "border-radius": "100% 0% 56% 44% / 53% 0% 100% 47% ",
+    "background-color": "#7E678F"
+  }
+}

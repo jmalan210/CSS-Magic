@@ -1,6 +1,9 @@
 @import 'variables';
 @import 'base';
 @import 'mixins';
+@import 'shapes';
+
+
 
 h1 {
     font-size: 5rem;
@@ -78,6 +81,45 @@ nav {
         transform: scale(1.1);
     }
 
+}
+//Shapes Page //
+
+.shape-main{ 
+    display: flex;
+}
+
+.shape-links {
+    width: 300px;
+    background-color: $navy;
+    color: white;
+
+    a {
+        margin: 20px;
+        font-weight: 700;
+    }
+}
+
+.shapes-container {
+    margin: 10px;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(100px, 1fr));
+    grid-gap: 5px;
+}
+
+.shape-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+    border: 2px solid $navy;
+}
+
+.shape {
+   margin: 0 auto;
+}
+
+.shape-code {
+    justify-content: baseline;
 }
 
 footer {

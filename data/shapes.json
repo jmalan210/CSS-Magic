@@ -39,7 +39,7 @@
     "tear-drop": {
     "width": "100px",
     "height": "100px", 
-    "border-radius": "100% 0% 56% 44% / 53% 0% 100% 47% ",
+    "border-radius": "100% 0% 56% 44% / 53% 0% 100% 47%",
     "background-color": "#7E678F"
   }
 }

@@ -1,0 +1,22 @@
+{
+  "name": "css-magic",
+  "version": "1.0.0",
+  "description": "��#\u0000 \u0000C\u0000S\u0000S\u0000-\u0000M\u0000a\u0000g\u0000i\u0000c\u0000\r\u0000 \u0000",
+  "main": "index.js",
+  "scripts": {
+    "shapes": "node scripts/generate-shapes.js",
+    "sass": "sass --watch styles/style.scss styles/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jmalan210/CSS-Magic.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/jmalan210/CSS-Magic/issues"
+  },
+  "homepage": "https://github.com/jmalan210/CSS-Magic#readme"
+}

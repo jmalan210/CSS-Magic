@@ -29,10 +29,10 @@ export default class GradientsList {
         });
      
        
-        gradientElement.style.width = "300px";
-        gradientElement.style.height = "300px";
+        gradientElement.style.width = "200px";
+        gradientElement.style.height = "200px";
         gradientElement.style.display = "block";
-        // gradientElement.style.border = "2px solid black";
+        gradientElement.style.border = "1px solid black";
         gradientElement.style.boxSizing = "border-box";
         gradientElement.style.flexShrink = "0";
          

@@ -142,14 +142,14 @@ nav {
 }
 
 
-.shapes-container {
+.shapes-container, .gradients-container {
     margin: 10px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
     gap: 20px;
 }
 
-.shape-card {
+.shape-card, .gradient-card {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -165,14 +165,8 @@ nav {
     justify-content: baseline;
 }
 
-.gradients-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-}
 
-.gradient {
-    border: 2px solid red;
-}
+
 
 footer {
     text-align: center;

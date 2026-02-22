@@ -1,6 +1,15 @@
 {
-    "simpleLinearGradient": {
+    "simpleHorizontalLinearGradient": {
        
-        "background": "linear-gradient(white, #2a5298)"
+        "background": "linear-gradient(180deg, #e79fa6, #7E678F)"
+    },
+
+     "simpleVerticalLinearGradient": {
+       
+        "background": "linear-gradient(90deg, #e79fa6, #7E678F)"
+    },
+    
+    "simpleAngledLinearGradient": {
+        "background": "linear-gradient(45deg, #e79fa6, #7E678F)"
     }
 }

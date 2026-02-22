@@ -44,6 +44,3 @@ export function camelToTitle(camelCaseStr) {
     return spaced.charAt(0).toUpperCase() + spaced.slice(1);
 }
 
-// Examples
-console.log(camelToTitle("simpleLinearGradient")); // "Simple Linear Gradient"
-console.log(camelToTitle("sunsetGradient"));       // "Sunset Gradient"

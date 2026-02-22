@@ -56,13 +56,7 @@ h1, h2 {
   width: 100px;
   height: 100px;
   border-radius: 50%;
-  background-color: #ce505c;
-}
-
-.square {
-  width: 100px;
-  height: 100px;
-  background-color: #e79fa6;
+  background-color: #003547;
 }
 
 .triangle {
@@ -70,7 +64,56 @@ h1, h2 {
   height: 0;
   border-left: 50px solid transparent;
   border-right: 50px solid transparent;
-  border-bottom: 100px solid #09075a;
+  border-bottom: 100px solid #003547;
+}
+
+.half-circle {
+  width: 150px;
+  height: 75px;
+  border-radius: 100vw 100vw 0 0;
+  background-color: #003547;
+}
+
+.leaf {
+  width: 150px;
+  height: 100px;
+  border-radius: 100vw 0 100vw 0;
+  background-color: #003547;
+}
+
+.wedge {
+  width: 100px;
+  height: 100px;
+  border-radius: 100vw 0 0 0;
+  background-color: #003547;
+}
+
+.pill {
+  width: 150px;
+  height: 75px;
+  border-radius: 100vw;
+  background-color: #003547;
+}
+
+.tear-drop {
+  width: 100px;
+  height: 100px;
+  border-radius: 100% 0% 56% 44%/53% 0% 100% 47%;
+  background-color: #003547;
+}
+
+.skewed {
+  width: 100px;
+  height: 100px;
+  transform: skew(20deg);
+  background-color: #003547;
+}
+
+.polygon {
+  width: 100px;
+  height: 100px;
+  clip-path: polygon(0 0, 100% 0, 75% 100%, 0 100%);
+  background-color: #003547;
 }
 
 h1 {
@@ -211,14 +254,14 @@ nav ul li a.active {
   transform: scale(1.1);
 }
 
-.shapes-container {
+.shapes-container, .gradients-container {
   margin: 10px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
   gap: 20px;
 }
 
-.shape-card {
+.shape-card, .gradient-card {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -226,7 +269,7 @@ nav ul li a.active {
   border: 2px solid #003547;
 }
 
-.shape {
+.shape, .gradient {
   margin: 0 auto;
 }
 

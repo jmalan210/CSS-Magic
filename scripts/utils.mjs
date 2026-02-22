@@ -36,3 +36,14 @@ export async function loadHeaderFooter() {
         }
     });
 }
+
+export function camelToTitle(camelCaseStr) {
+    if (!camelCaseStr) return "";
+    // Insert space before capital letters, then capitalize the first letter
+    const spaced = camelCaseStr.replace(/([A-Z])/g, ' $1'); 
+    return spaced.charAt(0).toUpperCase() + spaced.slice(1);
+}
+
+// Examples
+console.log(camelToTitle("simpleLinearGradient")); // "Simple Linear Gradient"
+console.log(camelToTitle("sunsetGradient"));       // "Sunset Gradient"

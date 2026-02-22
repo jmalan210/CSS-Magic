@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "shapes": "node scripts/generate-shapes.js",
+    "gradients": "node scripts/generate-gradients.js",
     "sass": "sass --watch styles/style.scss styles/style.css"
   },
   "repository": {

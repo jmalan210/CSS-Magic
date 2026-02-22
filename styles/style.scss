@@ -165,6 +165,15 @@ nav {
     justify-content: baseline;
 }
 
+.gradients-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.gradient {
+    border: 2px solid red;
+}
+
 footer {
     text-align: center;
     background-color: $rose;

@@ -47,6 +47,6 @@ export default class ShapesList {
                     this.addShape(name, cssProps);
                 });
             })
-            .catch(err => console.error("failed to locad shapes:", err));
+            .catch(err => console.error("failed to locate shapes:", err));
     }
 }

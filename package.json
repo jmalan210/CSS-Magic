@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/jmalan210/CSS-Magic/issues"
   },
-  "homepage": "https://github.com/jmalan210/CSS-Magic#readme"
+  "homepage": "https://github.com/jmalan210/CSS-Magic#readme",
+  "devDependencies": {
+    "sass": "^1.97.3"
+  }
 }
